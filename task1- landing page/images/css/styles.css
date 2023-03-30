@@ -1,0 +1,145 @@
+*{
+    margin: 0%; padding: 0%; box-sizing: border-box; 
+}
+
+.logoimage{
+    height: 130px;
+    width: 410px;
+     
+}
+
+.nav1{
+    width: 100%;
+    height: 130px;
+    background: black;
+    color:brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+
+}
+.menu a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color:rgb(243, 98, 31);
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+ 
+}
+.menu a:hover:before{
+    width: 90%;
+
+}
+
+header{
+    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.65)), url('truck2.png');
+    width: 100%;
+    height: 110vh;
+ 
+    background-size: cover;
+}
+.slogen{
+    position: absolute;
+    max-width: 600px;
+    color: aliceblue;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+.slogen h1{
+    font-size: 4em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slogen span {
+    color: rgb(234, 90, 90);
+}
+.footer-link {
+    
+    font-family: 'Open Sans', sans-serif ;
+    text-decoration: none;
+    color: indianred;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    min-width: 200px;
+
+}
+
+.bottom-container{
+    position: relative;
+    top: 650px;
+    left: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* //padding-bottom: 50px;// */
+
+}
+.bottom-container p{
+    left: 50%;
+    display:inline-flex;
+}
+.footer-link span{
+
+    color:aliceblue
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    font-family: 'Montserrat', sans-serif ;
+    color: rgb(229, 103, 103); ;
+
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+    background: #E4DCCF;
+  }
+  
+  input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(229, 103, 103);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  
+  input[type="submit"]:hover {
+    background-color: #b30000;
+  }
